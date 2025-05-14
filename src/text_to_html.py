@@ -35,3 +35,10 @@ def extract_markdown_images(text):
 def extract_markdown_links(text):
     extracted_text = re.findall(r"(?<!!)\[([^\[\]]*)\]\(([^\(\)]*)\)", text)
     return extracted_text
+
+
+def extract_title(markdown: str) -> str:
+    for line in markdown.splitlines():
+        if line.strip().startswith("# "):
+            return line.strip()[2:].strip()
+    raise ValueError("No H1 title found")
