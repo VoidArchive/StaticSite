@@ -1,7 +1,12 @@
 import unittest
 
 from textnode import TextNode, TextType
-from node_delimiter import split_nodes_delimiter, split_nodes_image, split_nodes_link
+from node_delimiter import (
+    split_nodes_delimiter,
+    split_nodes_image,
+    split_nodes_link,
+    text_to_textnodes,
+)
 
 
 class TestTextNode(unittest.TestCase):
@@ -145,6 +150,38 @@ class TestTextNode(unittest.TestCase):
             ],
             new_nodes,
         )
+
+    def test_simple_text(self):
+        text = "This is just plain text"
+        nodes = text_to_textnodes(text)
+        self.assertEqual(len(nodes), 1)
+        self.assertEqual(nodes[0].text, text)
+        self.assertEqual(nodes[0].text_type, TextType.TEXT)
+
+    def test_bold_text(self):
+        text = "This has **bold** text"
+        nodes = text_to_textnodes(text)
+        self.assertEqual(len(nodes), 3)
+        self.assertEqual(nodes[0].text, "This has ")
+        self.assertEqual(nodes[0].text_type, TextType.TEXT)
+        self.assertEqual(nodes[1].text, "bold")
+        self.assertEqual(nodes[1].text_type, TextType.BOLD)
+        self.assertEqual(nodes[2].text, " text")
+        self.assertEqual(nodes[2].text_type, TextType.TEXT)
+
+    def test_italic_text(self):
+        text = "This has _italic_ text"
+        nodes = text_to_textnodes(text)
+        self.assertEqual(len(nodes), 3)
+        self.assertEqual(nodes[1].text, "italic")
+        self.assertEqual(nodes[1].text_type, TextType.ITALIC)
+
+    def test_code_text(self):
+        text = "This has `code` text"
+        nodes = text_to_textnodes(text)
+        self.assertEqual(len(nodes), 3)
+        self.assertEqual(nodes[1].text, "code")
+        self.assertEqual(nodes[1].text_type, TextType.CODE)
 
 
 if __name__ == "__main__":
