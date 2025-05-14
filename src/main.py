@@ -7,14 +7,14 @@ import sys
 
 def main():
     basepath = sys.argv[1] if len(sys.argv) > 1 else "/"
-    source_dir = "static"
-    destination_dir = "docs"
-    template_path = "template.html"
+    source_dir = "./static"
+    destination_dir = "./docs"
+    template_path = "./template.html"
 
     clear_directory(destination_dir)
     copy_recursive(source_dir, destination_dir)
 
-    generate_pages_recursive("content", template_path, destination_dir, basepath)
+    generate_pages_recursive("./content", template_path, destination_dir, basepath)
 
 
 def generate_pages_recursive(content_dir, template_path, dest_dir, basepath):
