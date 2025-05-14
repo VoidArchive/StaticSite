@@ -1,5 +1,6 @@
 from htmlnode import LeafNode
 from textnode import TextType
+import re
 
 
 def text_node_to_html_node(text_node):
@@ -24,3 +25,13 @@ def text_node_to_html_node(text_node):
             )
         case _:
             raise Exception(f"Invalid text type: {text_node.text_type}")
+
+
+def extract_markdown_images(text):
+    extracted_text = re.findall(r"!\[([^\[\]]*)\]\(([^\(\)]*)\)", text)
+    return extracted_text
+
+
+def extract_markdown_links(text):
+    extracted_text = re.findall(r"(?<!!)\[([^\[\]]*)\]\(([^\(\)]*)\)", text)
+    return extracted_text
