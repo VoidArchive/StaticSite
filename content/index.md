@@ -1,46 +1,52 @@
-# Tolkien Fan Club
+# Digital Grimoire
 
-![JRR Tolkien sitting](/images/tolkien.png)
+![A lone wolf overlooking a valley](/images/wolf.jpg)
 
-Here's the deal, **I like Tolkien**.
+Memory is code. Code is transformation.
 
-> "I am in fact a Hobbit in all but size."
->
-> -- J.R.R. Tolkien
+## The Scribe
 
-## Blog posts
+Backend architect from the peaks of Nepal. Go and Python shape reality.
+SvelteKit weaves interfaces between worlds. When code sleeps, iron wakes.
+The body becomes both laboratory and experiment.
 
-- [Why Glorfindel is More Impressive than Legolas](/blog/glorfindel)
-- [Why Tom Bombadil Was a Mistake](/blog/tom)
-- [The Unparalleled Majesty of "The Lord of the Rings"](/blog/majesty)
+## Chronicles
 
-## Reasons I like Tolkien
+### Tomes of Power
 
-- You can spend years studying the legendarium and still not understand its depths
-- It can be enjoyed by children and adults alike
-- Disney _didn't ruin it_ (okay, but Amazon might have)
-- It created an entirely new genre of fantasy
+![A mystical sword](/images/sword.jpg)
 
-## My favorite characters (in order)
+- **The Way of Kings** - Sanderson's storm-forged epic.
+A world where magic armors flesh and honor binds gods. [Full chronicle](/books/way-of-kings)
 
-1. Gandalf
-2. Bilbo
-3. Sam
-4. Glorfindel
-5. Galadriel
-6. Elrond
-7. Thorin
-8. Sauron
-9. Aragorn
+- **The Name of the Wind** - Rothfuss's song of power.
+Music becomes magic, silence becomes strength. [Full chronicle](/books/name-of-the-wind)
 
-Here's what `elflang` looks like (the perfect coding language):
+- **The Wise Man's Fear** - The song continues.
+Blood and poetry intertwine. [Full chronicle](/books/the-wise-mans-fear)
 
-```
-func main(){
-    fmt.Println("Aiya, Ambar!")
-}
-```
+- **Mistborn** - Metal becomes might. A thief ascends to godhood. [Full chronicle](/books/mistborn-trilogy)
 
-Want to get in touch? [Contact me here](/contact).
+### Dark Reflections
 
-This site was generated with a custom-built [static site generator](https://www.boot.dev/courses/build-static-site-generator-python) from the course on [Boot.dev](https://www.boot.dev).
+![A council meeting in shadows](/images/council.jpg)
+
+- **The First Law** - Abercrombie's brutal truth: power corrupts, pain teaches.
+[Full chronicle](/books/the-first-law-trilogy)
+
+- **Animal Farm** - Orwell's mirror: four legs rise, two legs reign. [Full chronicle](/books/animal-farm)
+
+- **Project Hail Mary** - Weir's void-song: alone until alien grace. [Full chronicle](/books/project-hail-mary)
+
+## Iron Transmutation
+
+![Mountain climber pose](/images/fitness.webp)
+
+The body becomes the forge. [Enter the crucible](/fitness)
+
+Code shapes thought. Iron shapes flesh. Both demand sacrifice.
+
+---
+
+
+Forged in [Boot.dev](https://www.boot.dev)'s crucible. Every creator has their origin.
